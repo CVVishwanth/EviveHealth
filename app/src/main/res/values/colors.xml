@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B40431</color>
+    <color name="colorPrimaryDark">#C51162</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#B40431</color>
+    <color name="gray">#444440</color>
+    <color name="appbrown">#5C5228</color>
+    <color name="appwhite">#FFFFFF</color>
+    <color name="appblue">#90C0DA</color>
+</resources>

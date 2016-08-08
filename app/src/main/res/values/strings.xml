@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EVIVE HEALTH</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Near By Hospitals</string>
+    <string name="nav_item_bmi">BMI Calculator</string>
+    <string name="nav_item_drug">Patient history</string>
+    <string name="nav_item_history">Medicine Remainder</string>
+    <string name="nav_item_aboutus">About Evive</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_bmi</item>
+        <item>@string/nav_item_drug</item>
+        <item>@string/nav_item_history</item>
+        <item>@string/nav_item_aboutus</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_alset">Alset</string>
+    <string name="title_activity_alarm__stop">Alarm_Stop</string>
+
+</resources>

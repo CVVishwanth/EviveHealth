@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:color/holo_blue_dark"
+        android:text="Your Details"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:shadowColor="#ff4860"
+        android:textColor="@color/appbrown"
+        android:elegantTextHeight="true"
+        android:textSize="@android:dimen/notification_large_icon_height" />
+
+    <com.example.dell.asnavigation.FloatingHintEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hopitalname"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Hospital Name"
+        android:visibility="visible"/>
+    <!--<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital Name"
+        android:id="@+id/hopitalname"
+        />-->
+    <com.example.dell.asnavigation.FloatingHintEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fordc"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Visited For"
+        android:visibility="visible"/>
+    <!--<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="VISITED FOR"
+        android:id="@+id/fordc"
+        />-->
+    <com.example.dell.asnavigation.FloatingHintEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/docname"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Doctors name"
+        android:visibility="visible"/>
+    <!--<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctors name"
+        android:id="@+id/docname"
+        />-->
+    <com.example.dell.asnavigation.FloatingHintEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:inputType="text"
+        android:singleLine="true"
+        android:hint="Result"
+        android:visibility="visible"/>
+    <!-- <EditText
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="Result"
+         android:id="@+id/result"
+         />-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

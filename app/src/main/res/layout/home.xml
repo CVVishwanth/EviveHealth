@@ -1,0 +1,122 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+        <!-- <EditText
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/personname"
+             android:singleLine="true"
+             android:hint="Enter Your Name"
+             android:inputType="text"
+             />
+         <EditText
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/age"
+             android:singleLine="true"
+             android:hint="Enter Your Age"
+             android:inputType="number"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/holo_blue_dark"
+            android:text="Medicine Alarm"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:shadowColor="#ff4860"
+            android:textColor="@color/appbrown"
+            android:elegantTextHeight="true"
+            android:textSize="35dp" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicinenamee"
+            android:singleLine="true"
+            android:hint="Name of the medicine"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:color/holo_blue_dark"
+            android:text="Choose Time"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:shadowColor="#ff050102"
+            android:textColor="#ff100205"
+            android:elegantTextHeight="true"
+            android:textSize="15dp" />
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarmTimePicker"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm On/Off"
+            android:id="@+id/alarmToggle"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/alarmTimePicker"
+            android:onClick="onToggleClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/alarmText"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alarmToggle" />
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert"
+            android:text="Send Alert"/>-->
+    <!--<com.example.dell.asnavigation.FloatingHintEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+        android:id="@+id/personname"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_marginTop="30dp"/>-->
+    </LinearLayout>
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.example.dell.asnavigation.BlankFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragmentnavdrawer"
+        tools:layout="@layout/fragmentnavdrawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,84 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint=""
+          android:id="@+id/name"/>
+<GridView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/gridView1"
+    android:numColumns="2">
+
+    </GridView>
+    
+   <!-- <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:clickable="true"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editTextResult"/>
+    <Button
+        android:id="@+id/emer"
+
+        android:text="EMERGENCY"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A83E5E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+</LinearLayout>
+</LinearLayout>
+
+<fragment
+android:id="@+id/fragment_navigation_drawer"
+android:name="com.example.dell.asnavigation.BlankFragment"
+android:layout_width="@dimen/nav_drawer_width"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:layout="@layout/fragmentnavdrawer"
+tools:layout="@layout/fragmentnavdrawer" />
+
+
+    </android.support.v4.widget.DrawerLayout>
